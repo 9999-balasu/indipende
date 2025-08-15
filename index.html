@@ -117,6 +117,7 @@
         <input id="customTag" placeholder="Tag (e.g., Local Hero)"/>
         <button class="btn" type="submit">Add</button>
       </form>
+        <button id="clearCustom" class="btn" type="button">❌ Clear Custom Leaders</button>
     </div>
   </header>
 
@@ -153,6 +154,7 @@ const leaders = [
   { name: "Begum Hazrat Mahal", era: "1820–1879", emoji:"👑", tags:["1857","Awadh"] },
   { name: "Udham Singh", era: "1899–1940", emoji:"🎯", tags:["Jallianwala","Shaheed"] },
   { name: "Rama Devi (Choudhury)", era: "1899–1985", emoji:"🌾", tags:["Odisha","Freedom Fighter"] },
+    { name: "BALASULAIAH ", era: "", emoji:"🌾", tags:["NAYAKAL","KURNOOL"] },
 ];
 
 let custom = JSON.parse(localStorage.getItem('customLeaders')||'[]');
@@ -231,6 +233,16 @@ form.addEventListener('submit', (e)=>{
   document.getElementById('customTag').value='';
   render(); toast('Added to the wall of gratitude!');
 });
+
+function clearCustomLeaders(){
+  // remove the saved custom leaders key and update UI
+  localStorage.removeItem('customLeaders');
+  custom = [];
+  render();
+  toast('All custom leaders removed');
+}
+
+document.getElementById('clearCustom')?.addEventListener('click', clearCustomLeaders);
 
 // Search & sort listeners
 elQ.addEventListener('input', ()=>render());
