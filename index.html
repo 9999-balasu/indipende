@@ -81,8 +81,44 @@
   <header>
     <div class="wrap">
       <div class="title">
-        <div class="flag" aria-hidden="true">
-          <div class="saffron"></div>
+        <div class="flag" aria-hidden="true" role="img" aria-label="Flag of India">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="100%">
+            <rect width="300" height="66.666" y="0" fill="#FF9933" />
+            <rect width="300" height="66.666" y="66.666" fill="#ffffff" />
+            <rect width="300" height="66.666" y="133.333" fill="#138808" />
+            <!-- Ashoka Chakra (24 spokes) -->
+            <g transform="translate(150 100)">
+              <circle r="20" fill="none" stroke="#0a3d91" stroke-width="6" />
+              <g stroke="#0a3d91" stroke-width="1.8">
+                <line x1="0" y1="0" x2="0.000" y2="-20.000" />
+<line x1="0" y1="0" x2="5.176" y2="-19.319" />
+<line x1="0" y1="0" x2="10.000" y2="-17.321" />
+<line x1="0" y1="0" x2="14.142" y2="-14.142" />
+<line x1="0" y1="0" x2="17.321" y2="-10.000" />
+<line x1="0" y1="0" x2="19.319" y2="-5.176" />
+<line x1="0" y1="0" x2="20.000" y2="0.000" />
+<line x1="0" y1="0" x2="19.319" y2="5.176" />
+<line x1="0" y1="0" x2="17.321" y2="10.000" />
+<line x1="0" y1="0" x2="14.142" y2="14.142" />
+<line x1="0" y1="0" x2="10.000" y2="17.321" />
+<line x1="0" y1="0" x2="5.176" y2="19.319" />
+<line x1="0" y1="0" x2="0.000" y2="20.000" />
+<line x1="0" y1="0" x2="-5.176" y2="19.319" />
+<line x1="0" y1="0" x2="-10.000" y2="17.321" />
+<line x1="0" y1="0" x2="-14.142" y2="14.142" />
+<line x1="0" y1="0" x2="-17.321" y2="10.000" />
+<line x1="0" y1="0" x2="-19.319" y2="5.176" />
+<line x1="0" y1="0" x2="-20.000" y2="0.000" />
+<line x1="0" y1="0" x2="-19.319" y2="-5.176" />
+<line x1="0" y1="0" x2="-17.321" y2="-10.000" />
+<line x1="0" y1="0" x2="-14.142" y2="-14.142" />
+<line x1="0" y1="0" x2="-10.000" y2="-17.321" />
+<line x1="0" y1="0" x2="-5.176" y2="-19.319" />
+              </g>
+              <circle r="3" fill="#0a3d91" />
+            </g>
+          </svg>
+        </div>
           <div class="white">
             <div class="chakra" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -154,7 +190,6 @@ const leaders = [
   { name: "Begum Hazrat Mahal", era: "1820–1879", emoji:"👑", tags:["1857","Awadh"] },
   { name: "Udham Singh", era: "1899–1940", emoji:"🎯", tags:["Jallianwala","Shaheed"] },
   { name: "Rama Devi (Choudhury)", era: "1899–1985", emoji:"🌾", tags:["Odisha","Freedom Fighter"] },
-    { name: "BALASULAIAH ", era: "", emoji:"🌾", tags:["NAYAKAL","KURNOOL"] },
 ];
 
 let custom = JSON.parse(localStorage.getItem('customLeaders')||'[]');
